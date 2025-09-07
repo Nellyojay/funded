@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FundedNext Dashboard (Mobile)</title>
+  <title>FundedNext Dashboard</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
     body {
@@ -69,6 +69,9 @@
 
     h2{
       color: rgba(36, 0, 128, 0.756);
+      border: solid rgba(36, 0, 128, 0.207) 2px;
+      padding: 5px;
+      border-radius: 10px;
     }
 
     .card {
@@ -190,18 +193,8 @@
         <div class="stat "><h4>$5420</h4><span>Balance</span></div>
         <div class="stat passed"><h4>$420</h4><span>Profit/Loss</span></div>
         <div class="stat"><h4>$0</h4><span>Floating Loss</span></div>
-        <div class="stat"><h4>23</h4><span>Trading Days</span></div>
+        <div class="stat passed"><h4>23</h4><span>Trading Days</span></div>
       </div>
-    </div>
-
-    <div class="card">
-      <h3>Balance Trend</h3>
-      <canvas id="balanceChart"></canvas>
-    </div>
-
-    <div class="card">
-      <h3>Profit/Loss Trend</h3>
-      <canvas id="profitChart"></canvas>
     </div>
 
     <div class="card">
@@ -224,6 +217,16 @@
       <p><strong>Today's permitted loss will reset in</strong></p>
       <h2>00:00:00</h2>
       <p>Email Support: support@fundednext.com</p>
+    </div>
+
+    <div class="card">
+      <h3>Balance Trend</h3>
+      <canvas id="balanceChart"></canvas>
+    </div>
+
+    <div class="card">
+      <h3>Profit/Loss Trend</h3>
+      <canvas id="profitChart"></canvas>
     </div>
 
   </div>

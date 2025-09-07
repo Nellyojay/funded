@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FundedNext Dashboard (Mobile)</title>
+  <title>FundedNext Dashboard</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
     body {
@@ -70,6 +70,9 @@
 
     h2{
       color: rgba(36, 0, 128, 0.756);
+      border: solid rgba(36, 0, 128, 0.207) 2px;
+      padding: 5px;
+      border-radius: 10px;
     }
 
     .card {
@@ -91,7 +94,7 @@
       text-decoration: none;
       background-color: #d9fcd9;
       color: #0a0;
-      padding: 4px;
+      padding: 5px 10px;
       padding-top: 5px;
       margin-left: 5px;
       border-radius: 10px;
@@ -191,9 +194,8 @@
       <p><strong>Account Type:</strong> Swap</p>
     </div>
 
-    <div class="card" style="display: flex;">
-      <h3 style="padding-top: 4px;">Phase 1:</h3>
-      <a href="phase1.html" class="phase1">Passed</a>
+    <div class="card">
+      <h3>Phase 1:<a href="phase1.html" class="phase1">Passed</a></h3>
     </div>
 
     <div class="card account">
@@ -216,16 +218,6 @@
     </div>
 
     <div class="card">
-      <h3>Balance Trend</h3>
-      <canvas id="balanceChart"></canvas>
-    </div>
-
-    <div class="card">
-      <h3>Profit/Loss Trend</h3>
-      <canvas id="profitChart"></canvas>
-    </div>
-
-    <div class="card">
       <h3>Trading Objectives</h3>
       <div class="objective">
         <p><strong>Daily Loss Limit:</strong> <br> Max: <strong>$200</strong> <br> Current: <strong>$0</strong> <span class="badge ongoing">Ongoing</span></p>
@@ -245,6 +237,16 @@
       <p><strong>Today's permitted loss will reset in</strong></p>
       <h2 id="countdown">00:00:00</h2>
       <p>Email Support: support@fundednext.com</p>
+    </div>
+
+    <div class="card">
+      <h3>Balance Trend</h3>
+      <canvas id="balanceChart"></canvas>
+    </div>
+
+    <div class="card">
+      <h3>Profit/Loss Trend</h3>
+      <canvas id="profitChart"></canvas>
     </div>
 
   </div>
